@@ -4,32 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Current Date & Time</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 20%;
-        }
-        #datetime {
-            font-size: 24px;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Current Date & Time</h1>
     <div id="datetime"></div>
     
-    <script>
-        function updateDateTime() {
-            const now = new Date();
-            const formattedDateTime = now.toLocaleString();
-            document.getElementById("datetime").textContent = formattedDateTime;
-        }
-        
-        setInterval(updateDateTime, 1000);
-        updateDateTime(); // Initial call to set immediately
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
