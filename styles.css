@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20%;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#datetime {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    background: white;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
