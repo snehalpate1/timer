@@ -1,17 +1,26 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 20%;
-    background-color: #f4f4f4;
-    color: #333;
+.travel-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-#datetime {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 10px;
-    background: white;
-    display: inline-block;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.travel-card {
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.travel-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.travel-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
