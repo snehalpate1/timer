@@ -7,50 +7,56 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background: url('destination1.jpg') no-repeat center center fixed;
-            background-size: cover;
+            display: flex;
+            height: 100vh;
+            margin: 0;
+        }
+        .left-half {
+            width: 50%;
+            background-color: black;
             color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .right-half {
+            width: 50%;
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="left-half">
         <h1>Welcome to My Dynamic Web Page</h1>
-    </header>
+        <h2>Current Date & Time</h2>
+        <div id="datetime"></div>
+        <h2>Change Background Color</h2>
+        <button onclick="changeBackgroundColor()">Click Me!</button>
+    </div>
     
-    <main>
-        <section>
-            <h2>Current Date & Time</h2>
-            <div id="datetime"></div>
-        </section>
-        
-        <section>
-            <h2>Change Background Color</h2>
-            <button onclick="changeBackgroundColor()">Click Me!</button>
-        </section>
-        
-        <section>
-            <h2>Traveling Destinations</h2>
-            <div class="travel-container">
-                <div class="travel-card">
-                    <img src="destination1.jpg" alt="Beautiful Beach">
-                    <p>Relax on the most beautiful beaches.</p>
-                </div>
-                <div class="travel-card">
-                    <img src="destination2.jpg" alt="Mountain View">
-                    <p>Explore breathtaking mountain views.</p>
-                </div>
-                <div class="travel-card">
-                    <img src="destination3.jpg" alt="Cityscape">
-                    <p>Experience vibrant city life.</p>
-                </div>
+    <div class="right-half">
+        <h2>Traveling Destinations</h2>
+        <div class="travel-container">
+            <div class="travel-card">
+                <img src="destination1.jpg" alt="Beautiful Beach">
+                <p>Relax on the most beautiful beaches.</p>
             </div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 My Website. All rights reserved.</p>
-    </footer>
+            <div class="travel-card">
+                <img src="destination2.jpg" alt="Mountain View">
+                <p>Explore breathtaking mountain views.</p>
+            </div>
+            <div class="travel-card">
+                <img src="destination3.jpg" alt="Cityscape">
+                <p>Experience vibrant city life.</p>
+            </div>
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
